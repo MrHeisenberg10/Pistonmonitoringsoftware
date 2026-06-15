@@ -63,13 +63,6 @@ export const mockRingTypes: RingType[] = [
     ringPosition: 'Oil',
     description: 'Main oil control ring',
   },
-  {
-    id: '4',
-    code: 'OR-002',
-    name: 'Oil Ring Side Rail',
-    ringPosition: 'Oil Side Rail',
-    description: 'Oil ring side rail spacer',
-  },
 ];
 
 export const mockComponentData: ComponentData[] = [
@@ -104,14 +97,6 @@ export const mockComponentData: ComponentData[] = [
     targetCount: 182,
     qrCode: 'OR-2024-001-11111',
     status: 'pending',
-  },
-  {
-    id: '5',
-    componentName: 'Oil Ring Side Rail',
-    currentCount: 40,
-    targetCount: 182,
-    qrCode: 'OSR-2024-001-22222',
-    status: 'validated',
   },
 ];
 
@@ -286,14 +271,13 @@ export const mockProductConfigurations = [
   {
     id: '1',
     name: 'Standard Assembly',
-    description: 'Standard piston assembly with 4 rings',
-    componentIds: ['1', '2', '3', '4', '5'],
+    componentIds: ['1', '2', '3', '4'],
   },
   {
     id: '2',
     name: 'High-Performance Assembly',
     description: 'Performance variant with enhanced rings',
-    componentIds: ['1', '2', '3', '4'],
+    componentIds: ['1', '2', '3'],
   },
 ];
 

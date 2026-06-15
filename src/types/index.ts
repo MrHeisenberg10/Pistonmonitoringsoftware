@@ -62,7 +62,7 @@ export interface RingType {
   id: string;
   code: string;
   name: string;
-  ringPosition: 'Top' | 'Mid' | 'Oil' | 'Oil Side Rail';
+  ringPosition: 'Top' | 'Mid' | 'Oil';
   description?: string;
 }
 
