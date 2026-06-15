@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply font-sans;
+}
+
+body {
+  @apply bg-bg-neutral;
+}
+
+/* Smooth transitions */
+@layer components {
+  .transition-smooth {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .hover-lift {
+    @apply hover:shadow-lg hover:-translate-y-0.5 transition-smooth;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-sm;
+  }
+
+  .card-hover {
+    @apply card hover-lift cursor-pointer;
+  }
+
+  .status-badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium;
+  }
+
+  .nav-item-active {
+    @apply border-l-4 border-teal-accent bg-teal-accent/10 text-teal-accent;
+  }
+}
