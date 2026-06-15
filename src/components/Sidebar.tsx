@@ -28,7 +28,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ onLogout, isCollapsed, onToggl
   const navItems = [
     { path: '/dashboard', label: 'Data Logging', icon: LayoutDashboard, roles: ['Administrator', 'Inspector', 'Operator'] },
     { path: '/reports', label: 'Reports', icon: FileText, roles: ['Administrator', 'Inspector', 'Operator'] },
-    { path: '/validation', label: 'Validation', icon: CheckCircle, roles: ['Administrator', 'Inspector'] },
+
     { path: '/shift-reports', label: 'Shift Reports', icon: ClipboardList, roles: ['Administrator', 'Inspector'] },
     { path: '/masters', label: 'Masters', icon: Database, roles: ['Administrator'] },
     { path: '/settings', label: 'Settings', icon: Settings, roles: ['Administrator'] },

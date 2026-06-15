@@ -8,7 +8,7 @@ import { DataLoggingPage } from './pages/DataLoggingPage';
 import { MastersPage } from './pages/MastersPage';
 import { SettingsPage } from './pages/SettingsPage';
 import { ReportsPage } from './pages/ReportsPage';
-import { ValidationPage } from './pages/ValidationPage';
+
 import { AuditTrailPage } from './pages/AuditTrailPage';
 import { ShiftReportsPage } from './pages/ShiftReportsPage';
 import './index.css';
@@ -38,14 +38,7 @@ const AppRoutes: React.FC = () => {
           </ProtectedRoute>
         }
       />
-      <Route
-        path="/validation"
-        element={
-          <ProtectedRoute allowedRoles={['Administrator', 'Inspector']}>
-            <ValidationPage />
-          </ProtectedRoute>
-        }
-      />
+
       <Route
         path="/shift-reports"
         element={
