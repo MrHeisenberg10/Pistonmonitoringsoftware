@@ -39,7 +39,7 @@ export const LoginPage: React.FC = () => {
           {/* Logo */}
           <div className="flex flex-col items-center mb-8">
             <img 
-              src="/images/IMG-20260605-WA0002.jpg" 
+              src={`${import.meta.env.BASE_URL}images/IMG-20260605-WA0002.jpg`} 
               alt="Artivus Systems Logo" 
               className="h-32 w-auto object-contain mb-4"
             />

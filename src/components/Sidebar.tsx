@@ -48,7 +48,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ onLogout, isCollapsed, onToggl
       {/* Logo Section */}
       <div className="p-4 border-b border-white/10 flex flex-col items-center flex-shrink-0">
         <img 
-          src="/images/IMG-20260605-WA0002.jpg" 
+          src={`${import.meta.env.BASE_URL}images/IMG-20260605-WA0002.jpg`}
           alt="Artivus Systems Logo" 
           className={`object-contain transition-all ${isCollapsed ? 'h-10 w-10' : 'h-14 w-auto'}`}
         />
